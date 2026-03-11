@@ -2,7 +2,7 @@ import { profile } from "@/data/profile";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import profileImg from '../assets/profile.jpg';
 
 
@@ -19,7 +19,7 @@ const container = {
 const item = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
-};
+} as const;
 
 export default function Home() {
   return (
@@ -84,7 +84,7 @@ export default function Home() {
         variants={item}
         className="relative group w-full max-w-md mx-auto aspect-square"
       >
-        <div className="absolute -inset-2 bg-white/40 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute -inset-2 bg-white/40 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <div
           className="relative h-full w-full bg-white rounded-3xl border border-white/50 overflow-hidden flex items-center justify-center shadow-sm group-hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] transition-all duration-500"
           role="profile.png"
