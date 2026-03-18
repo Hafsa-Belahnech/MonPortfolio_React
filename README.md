@@ -17,9 +17,15 @@
 
 # Résultat visuel simple :
 
-
 https://github.com/user-attachments/assets/1bbff950-1a30-4aa1-a4b6-8f3d62f12a04
 
 
+## 🔗 Lien du site en ligne
+👉 **[https://mon-portfolio-react-bica.vercel.app](https://mon-portfolio-react-bice.vercel.app/)**
+
+ 
+---
+### 👨‍💻 Développé par **Hafsa Belahnech**
+*Mars 2026 - Projet réalisé dans le cadre du TP React & Vercel.*
 
 
