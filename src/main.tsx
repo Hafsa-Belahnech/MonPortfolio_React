@@ -4,10 +4,12 @@ import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./app/router";
 import { HelmetProvider } from "react-helmet-async";
+import { Analytics } from "@vercel/analytics/react";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <HelmetProvider>
+      <Analytics />
       <RouterProvider router={router} />
     </HelmetProvider>
   </StrictMode>,

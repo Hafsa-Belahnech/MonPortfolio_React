@@ -30,7 +30,7 @@ export default function Home() {
       className="grid gap-12 md:grid-cols-2 items-center min-h-[70vh]"
     >
       <Helmet>
-        <title>{profile.name} Portfolio </title>
+        <title>{profile.name} Mon Portfolio </title>
         <meta
           name="description"
           content="Portfolio : SQL, Développement web, Réseaux , Administration Linux, UML, Java"
