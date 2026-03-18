@@ -68,7 +68,7 @@ export default function ContactPage() {
 
         <motion.div variants={item} className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
           <a
-            href="https://www.linkedin.com/in/hafsa-b-01592b270"
+            href="https://www.linkedin.com/in/hafsa-belahnech-01592b270/"
             target="_blank"
             rel="noreferrer"
             className="glass-card flex items-center justify-center sm:justify-start gap-4 p-6 text-xl rounded-2xl hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10 transition-all group"
