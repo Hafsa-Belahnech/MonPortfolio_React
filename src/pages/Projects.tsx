@@ -43,11 +43,18 @@ export default function Projects() {
           >
             {/* Folder / Icon or Banner placeholder */}
             <div className="w-full h-40 bg-white/5 rounded-xl mb-6 overflow-hidden relative border border-white/5 group-hover:border-primary/30 transition-colors">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              {/* Here you could map p.image if it exists, for now fallback to icon */}
-              <div className="h-full w-full flex items-center justify-center text-4xl text-white/20 group-hover:text-primary/50 transition-colors duration-500">
-                🚀
-              </div>
+              <div className="absolute inset-0 z-10 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              {p.image ? (
+                <img 
+                  src={p.image} 
+                  alt={p.title} 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              ) : (
+                <div className="h-full w-full flex items-center justify-center text-4xl text-white/20 group-hover:text-primary/50 transition-colors duration-500">
+                  🚀
+                </div>
+              )}
             </div>
 
             <div className="flex-grow flex flex-col">
