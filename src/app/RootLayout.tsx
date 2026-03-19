@@ -1,8 +1,14 @@
+import { useState } from "react";
 import { Outlet, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 export default function RootLayout() {
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <div className="min-h-dvh text-foreground relative font-sans flex flex-col">
@@ -14,10 +20,12 @@ export default function RootLayout() {
       </div>
 
       <header className="sticky top-4 z-50 mx-auto w-full max-w-5xl px-4 mb-4">
-        <nav className="glass-panel flex items-center justify-between p-4 px-6 rounded-2xl">
-          <NavLink to="/" className="font-bold text-xl tracking-tight text-gradient-primary">
+        <nav className="glass-panel flex items-center justify-between p-4 px-6 rounded-2xl relative z-20">
+          <NavLink to="/" onClick={closeMobileMenu} className="font-bold text-xl tracking-tight text-gradient-primary">
             Portfolio<span className="text-foreground">.</span>
           </NavLink>
+          
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6 text-sm font-medium">
             <NavLink to="/projects" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Projets</NavLink>
             <NavLink to="/experience" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Parcours</NavLink>
@@ -25,7 +33,37 @@ export default function RootLayout() {
             <NavLink to="/certifications" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Certifications</NavLink>
             <NavLink to="/contact" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Contact</NavLink>
           </div>
+
+          {/* Mobile Menu Toggle */}
+          <button 
+            className="md:hidden text-foreground hover:text-primary transition-colors focus:outline-none"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </nav>
+
+        {/* Mobile Menu Dropdown */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10, height: 0 }}
+              animate={{ opacity: 1, y: 0, height: "auto" }}
+              exit={{ opacity: 0, y: -10, height: 0 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden glass-panel mt-2 overflow-hidden rounded-2xl border border-white/10 absolute left-4 right-4 z-10"
+            >
+              <div className="flex flex-col p-4 gap-4 text-sm font-medium">
+                <NavLink to="/projects" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Projets</NavLink>
+                <NavLink to="/experience" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Parcours</NavLink>
+                <NavLink to="/education" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Formations</NavLink>
+                <NavLink to="/certifications" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Certifications</NavLink>
+                <NavLink to="/contact" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Contact</NavLink>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
 
       <AnimatePresence mode="wait">
@@ -35,7 +73,7 @@ export default function RootLayout() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="mx-auto w-full max-w-5xl p-6 relative z-10 flex-grow"
+          className="mx-auto w-full max-w-5xl p-6 relative z-10 flex-grow pt-8 md:pt-6"
         >
           <Outlet />
         </motion.main>
