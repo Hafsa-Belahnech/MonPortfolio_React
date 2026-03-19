@@ -8,6 +8,8 @@ export type Project = {
   image?: string;
 };
 
+import todoListImg from "../assets/img.jpeg";
+
 export const projects: Project[] = [
 
   {
@@ -16,6 +18,7 @@ export const projects: Project[] = [
     tags: ["HTML5", "CSS3", "JavaScript (ES6)"],
     summary: "Une application web pour gérer les tâches quotidiennes.",
     repo: "https://github.com/Hafsa-Belahnech/Ma-To-Do-List-HTML_CSS_JS.git",
+    image: todoListImg,
   },
 
 
