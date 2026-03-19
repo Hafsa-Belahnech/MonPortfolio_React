@@ -50,9 +50,9 @@ export default function RootLayout() {
             <motion.div
               initial={{ opacity: 0, y: -10, height: 0 }}
               animate={{ opacity: 1, y: 0, height: "auto" }}
-              exit={{ opacity: 0, y: -10, height: 0 }}
+               exit={{ opacity: 0, y: -10, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden glass-panel mt-2 overflow-hidden rounded-2xl border border-white/10 absolute left-4 right-4 z-10"
+              className="md:hidden bg-background/95 backdrop-blur-2xl mt-2 overflow-hidden rounded-2xl border border-white/10 absolute left-4 right-4 z-10 shadow-2xl"
             >
               <div className="flex flex-col p-4 gap-4 text-sm font-medium">
                 <NavLink to="/projects" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Projets</NavLink>

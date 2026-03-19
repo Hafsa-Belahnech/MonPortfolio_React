@@ -24,5 +24,15 @@ export const certifications: Certification[] = [
     imageAlt: "Badge Hibernate & JPA",
     status: "active",
   },
-
+  {
+    title: "React",
+    issuer: "MLIA Edu",
+    issueDate: "2026-03",
+    credentialUrl: "https://mliaedu.toubkalit.com/verify-certificate/26-02b048ac-a1c7-4813-9c0a-51bbc6fbac4a-699069",
+    skills: ["React", "JavaScript", "JSX", "Hooks"],
+    tags: ["React", "Frontend"],
+    image: "/certs/CertificationReact.png",
+    imageAlt: "Certification React",
+    status: "active",
+  },
 ];

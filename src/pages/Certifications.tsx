@@ -46,8 +46,8 @@ export default function CertificationsPage() {
       </div>
 
       {/* Grille de cartes */}
-      <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <AnimatePresence mode="popLayout">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <AnimatePresence>
           {list.length > 0 ? (
             list.map((c) => (
               <motion.div
@@ -71,7 +71,7 @@ export default function CertificationsPage() {
             </motion.p>
           )}
         </AnimatePresence>
-      </motion.div>
+      </div>
     </section>
   );
 }

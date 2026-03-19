@@ -17,7 +17,7 @@ export default function CertificationCard({ c }: { c: Certification }) {
   return (
     <article
       className={clsx(
-        "glass-card flex flex-col h-full group bg-white/5 border border-white/10 rounded-3xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:-rotate-1 hover:shadow-2xl hover:shadow-primary/20 cursor-pointer",
+        "glass-card flex flex-col h-full group bg-white/5 border border-white/10 rounded-3xl overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)] hover:border-white/30 cursor-pointer",
         (isExpired || c.status === "revoked") && "opacity-70 grayscale-[0.8]"
       )}
     >
@@ -28,10 +28,10 @@ export default function CertificationCard({ c }: { c: Certification }) {
             src={c.image}
             alt={c.imageAlt ?? c.title}
             loading="lazy"
-            className="w-full h-full object-contain relative z-10 transition-transform duration-500 group-hover:scale-110 drop-shadow-xl"
+            className="w-full h-full object-contain relative z-10 transition-transform duration-500 drop-shadow-xl"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-7xl relative z-10 transition-transform duration-500 group-hover:scale-110">
+          <div className="w-full h-full flex items-center justify-center text-7xl relative z-10 transition-transform duration-500">
             📜
           </div>
         )}
