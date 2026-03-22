@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Outlet, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import FloatingShapes from "../component/FloatingShapes";
 
 export default function RootLayout() {
   const location = useLocation();
@@ -18,6 +19,8 @@ export default function RootLayout() {
         <div className="bg-blob bg-blob-2"></div>
         <div className="bg-blob bg-blob-3"></div>
       </div>
+      
+      <FloatingShapes />
 
       <header className="sticky top-4 z-50 mx-auto w-full max-w-5xl px-4 mb-4">
         <nav className="glass-panel flex items-center justify-between p-4 px-6 rounded-2xl relative z-20">
