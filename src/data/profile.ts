@@ -1,6 +1,6 @@
 export const profile = {
   name: "Belahnech Hafsa",
-  role: "IT Bachelor's Student",
+  role: "Bachelor's Student in Distributed Information Systems (SIR)",
   location: "Marrakech, Morocco",
   socials: [
     { label: "GitHub", href: "https://github.com/Hafsa-Belahnech" },
