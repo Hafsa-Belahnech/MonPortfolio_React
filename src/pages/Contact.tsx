@@ -26,7 +26,7 @@ export default function ContactPage() {
           Contact
         </h2>
         <p className="text-white/60 text-lg leading-relaxed">
-          N'hésitez pas à me contacter pour une opportunité professionnelle ou simplement pour échanger.
+          Feel free to reach out for a professional opportunity or just to chat.
         </p>
       </motion.div>
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
         className="flex flex-col gap-8 w-full max-w-2xl"
       >
         <motion.div variants={item} className="glass-panel p-8 md:p-10 rounded-3xl space-y-8 flex flex-col items-center">
-          <h3 className="text-2xl font-semibold text-white">Mes Coordonnées</h3>
+          <h3 className="text-2xl font-semibold text-white">My Information</h3>
 
           <div className="flex flex-col md:flex-row gap-8 w-full justify-center">
             <div className="flex items-center gap-4 group bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-white/10 transition-colors flex-1">
@@ -57,9 +57,9 @@ export default function ContactPage() {
                 <MapPin className="w-5 h-5 text-emerald-300" />
               </div>
               <div className="overflow-hidden">
-                <p className="text-sm font-medium text-white/50">Localisation</p>
+                <p className="text-sm font-medium text-white/50">Location</p>
                 <p className="text-white text-base md:text-lg font-medium truncate block">
-                  Marrakech, Maroc
+                  Marrakech, Morocco
                 </p>
               </div>
             </div>

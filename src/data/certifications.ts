@@ -21,7 +21,7 @@ export const certifications: Certification[] = [
     skills: ["Hibernate", "JPA", "JPQL", "HQL"],
     tags: ["JEE", "Java"],
     image: "/certs/Certif.png",
-    imageAlt: "Badge Hibernate & JPA",
+    imageAlt: "Hibernate & JPA Badge",
     status: "active",
   },
   {
@@ -32,7 +32,7 @@ export const certifications: Certification[] = [
     skills: ["React", "JavaScript", "JSX", "Hooks"],
     tags: ["React", "Frontend"],
     image: "/certs/CertificationReact.png",
-    imageAlt: "Certification React",
+    imageAlt: "React Certification",
     status: "active",
   },
 ];

@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: "To-Do List",
     period: "2025",
     tags: ["HTML5", "CSS3", "JavaScript (ES6)"],
-    summary: "Une application web pour gérer les tâches quotidiennes.",
+    summary: "A web application to manage daily tasks.",
     repo: "https://github.com/Hafsa-Belahnech/Ma-To-Do-List-HTML_CSS_JS.git",
     image: todoListImg,
   },
@@ -27,28 +27,28 @@ export const projects: Project[] = [
     title: "Mini-Blog",
     period: "2025/2026",
     tags: ["PHP", "Laravel", "Bootstrap", "HTML/CSS"],
-    summary: "Mini-Blog interactif.",
+    summary: "Interactive Mini-Blog.",
   },
 
   {
-    title: "Mini-site de cours en ligne",
+    title: "Online Course Mini-Site",
     period: "2026",
     tags: ["PHP", "Laravel", "Bootstrap", "HTML/CSS"],
-    summary: "Site pour les cours en ligne.",
+    summary: "Website for online courses.",
 
   },
 
   {
-    title: "Bibliothèque Cadi Ayyad",
+    title: "Cadi Ayyad Library",
     period: "2025",
-    tags: ["SQL", "MCD/MLD/MPD", "Pl/SQL"],
-    summary: "Site pour la gestion de la base de données de la bibliothèque de Cadi Ayyad",
+    tags: ["SQL", "ERD/Relational Databases", "Pl/SQL"],
+    summary: "Database management system website for the Cadi Ayyad library",
   },
 
   {
     title: "Company network",
     period: "2025",
-    tags: ["Cisco Packet Tracer", "Routing", "Switching", "VLAN", "Protocoles", "TCP/IP", "DHCP", "DNS"],
-    summary: "Projet de gestion de réseau d'entreprise avec Cisco Packet Tracer",
+    tags: ["Cisco Packet Tracer", "Routing", "Switching", "VLAN", "Protocols", "TCP/IP", "DHCP", "DNS"],
+    summary: "Enterprise network management project using Cisco Packet Tracer",
   },
 ];

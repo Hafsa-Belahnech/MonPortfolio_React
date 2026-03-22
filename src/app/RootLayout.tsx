@@ -27,9 +27,9 @@ export default function RootLayout() {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <NavLink to="/projects" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Projets</NavLink>
-            <NavLink to="/experience" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Parcours</NavLink>
-            <NavLink to="/education" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Formations</NavLink>
+            <NavLink to="/projects" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Projects</NavLink>
+            <NavLink to="/experience" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Experience</NavLink>
+            <NavLink to="/education" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Education</NavLink>
             <NavLink to="/certifications" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Certifications</NavLink>
             <NavLink to="/contact" className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Contact</NavLink>
           </div>
@@ -55,9 +55,9 @@ export default function RootLayout() {
               className="md:hidden bg-background/95 backdrop-blur-2xl mt-2 overflow-hidden rounded-2xl border border-white/10 absolute left-4 right-4 z-10 shadow-2xl"
             >
               <div className="flex flex-col p-4 gap-4 text-sm font-medium">
-                <NavLink to="/projects" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Projets</NavLink>
-                <NavLink to="/experience" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Parcours</NavLink>
-                <NavLink to="/education" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Formations</NavLink>
+                <NavLink to="/projects" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Projects</NavLink>
+                <NavLink to="/experience" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Experience</NavLink>
+                <NavLink to="/education" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Education</NavLink>
                 <NavLink to="/certifications" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Certifications</NavLink>
                 <NavLink to="/contact" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "text-primary" : "text-foreground/80 hover:text-primary transition-colors"}>Contact</NavLink>
               </div>
@@ -73,7 +73,7 @@ export default function RootLayout() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="mx-auto w-full max-w-5xl p-6 relative z-10 flex-grow pt-8 md:pt-6"
+          className="mx-auto w-full max-w-5xl p-6 relative z-10 grow pt-8 md:pt-6"
         >
           <Outlet />
         </motion.main>

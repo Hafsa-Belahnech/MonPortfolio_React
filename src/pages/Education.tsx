@@ -4,7 +4,7 @@ import { GraduationCap } from "lucide-react";
 
 // Fonction pour formater les dates (ex: 2023-09 -> 09/2023)
 function fmt(s?: string) {
-  if (!s) return "Présent";
+  if (!s) return "Present";
   const [y, m] = s.split("-");
   return `${m}/${y}`;
 }
@@ -26,9 +26,9 @@ export default function EducationPage() {
   return (
     <section className="flex flex-col gap-10">
       <div className="space-y-4 max-w-2xl">
-        <h2 className="text-4xl font-bold text-gradient-primary">Formations</h2>
+        <h2 className="text-4xl font-bold text-gradient-primary">Education</h2>
         <p className="text-white/60 text-lg">
-          Mon parcours académique 🎓
+          My academic journey 🎓
         </p>
       </div>
 
@@ -50,7 +50,7 @@ export default function EducationPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-white leading-tight">
                     {e.degree}
-                    {e.field ? <span className="text-primary/90"> en {e.field}</span> : ""}
+                    {e.field ? <span className="text-primary/90"> in {e.field}</span> : ""}
                   </h3>
                   <h4 className="text-lg font-medium text-white/70 mt-1">{e.school}</h4>
                 </div>
@@ -66,7 +66,7 @@ export default function EducationPage() {
 
               {e.courses && e.courses.length > 0 && (
                 <div className="mb-4">
-                  <strong className="text-white/80 block mb-2 font-semibold">Cours Principaux :</strong>
+                  <strong className="text-white/80 block mb-2 font-semibold">Core Courses:</strong>
                   <div className="flex flex-wrap gap-2">
                     {e.courses.slice(0, 9).map(course => (
                       <span key={course} className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-xs font-medium text-white/60">

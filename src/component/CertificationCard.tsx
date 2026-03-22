@@ -38,17 +38,17 @@ export default function CertificationCard({ c }: { c: Certification }) {
       </div>
 
       {/* Bas : Contenu texte */}
-      <div className="p-6 flex flex-col flex-grow relative z-20">
+      <div className="p-6 flex flex-col grow relative z-20">
         <h3 className="font-bold text-xl leading-snug text-white mb-2 group-hover:text-primary transition-colors">
           {c.title}
         </h3>
         <p className="text-sm font-semibold text-white/70 mb-4">{c.issuer}</p>
 
         <p className="text-xs text-white/50 mb-5 bg-white/5 p-3 rounded-xl border border-white/5 self-start">
-          Délivrée : {mmYYYY(c.issueDate)}
+          Issued : {mmYYYY(c.issueDate)}
           {c.expiryDate
-            ? ` • Expire : ${mmYYYY(c.expiryDate)}`
-            : " • Permanente"}
+            ? ` • Expires : ${mmYYYY(c.expiryDate)}`
+            : " • Permanent"}
           {c.credentialId && (
             <span className="block mt-1 font-mono text-[10px] text-white/40">ID : {c.credentialId}</span>
           )}
@@ -83,23 +83,23 @@ export default function CertificationCard({ c }: { c: Certification }) {
               className="text-sm font-semibold flex items-center gap-1.5 text-white/90 hover:text-primary transition-colors bg-white/5 hover:bg-white/10 px-4 py-2.5 rounded-xl border border-white/10"
             >
               <ExternalLink className="w-4 h-4" />
-              Vérifier
+              Verify
             </a>
           ) : (
             <span className="text-sm text-white/30 italic">
-              Pas de lien public
+              No public link
             </span>
           )}
 
           <div className="flex gap-2">
             {isExpired && (
               <span className="text-xs font-bold uppercase tracking-wider text-rose-300 bg-rose-900/40 border border-rose-500/30 px-3 py-1.5 rounded-xl">
-                Expirée
+                Expired
               </span>
             )}
             {c.status === "revoked" && (
               <span className="text-xs font-bold uppercase tracking-wider text-orange-300 bg-orange-900/40 border border-orange-500/30 px-3 py-1.5 rounded-xl">
-                Révoquée
+                Revoked
               </span>
             )}
           </div>

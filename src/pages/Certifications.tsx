@@ -31,17 +31,17 @@ export default function CertificationsPage() {
         <div className="space-y-4">
           <h2 className="text-4xl font-bold text-gradient-primary">Certifications</h2>
           <p className="text-white/60 text-lg">
-            Mes validations de compétences officielles reconnues par l'industrie.
+            My official skill validations recognized by the industry.
           </p>
         </div>
 
         <input
           type="text"
-          placeholder="Rechercher (ex: Java, React, SQL...)"
+          placeholder="Search (e.g., Java, React, SQL...)"
           value={q}
           onChange={(e) => setQ(e.target.value)}
           className="glass-input px-4 py-3 w-full md:w-80 shadow-lg"
-          aria-label="Filtrer les certifications"
+          aria-label="Filter certifications"
         />
       </div>
 
@@ -67,7 +67,7 @@ export default function CertificationsPage() {
               animate={{ opacity: 1 }}
               className="text-white/50 text-center col-span-full py-16 glass-panel rounded-2xl"
             >
-              Aucune certification ne correspond à votre recherche.
+              No certifications match your search.
             </motion.p>
           )}
         </AnimatePresence>

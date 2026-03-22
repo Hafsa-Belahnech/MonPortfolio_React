@@ -14,24 +14,24 @@ export const education: Education[] = [
 
 
   {
-    school: "Université Cadi Ayyad",
-    degree: "Licence",
-    field: "Systèmes d'Informations Répartis",
+    school: "Cadi Ayyad University",
+    degree: "Bachelor's Degree",
+    field: "Distributed Information Systems",
     location: "Marrakech",
     start: "2024-09",
     end: "2026-07",
-    courses: ["Java", "Réseaux", "Administration Linux", "SGBD", "Développement web", "UML", "IHM", "JEE"],
-    highlights: ["Projets et Travaux pratiques enrichissants"],
+    courses: ["Java", "Networking", "Linux Administration", "DBMS", "Web Development", "UML", "HCI", "JEE"],
+    highlights: ["Enriching projects and practical work"],
   },
 
   {
-    school: "Université Cadi Ayyad",
+    school: "Cadi Ayyad University",
     degree: "DEUST",
-    field: "Mathématiques Informatique Physique et Chimie",
+    field: "Mathematics, Computer Science, Physics, and Chemistry",
     location: "Marrakech",
     start: "2023-09",
     end: "2025-06",
-    courses: ["Analyse", "Algèbre", "Mécanique", "Electricité", "Electronique", "Chimie", "Optique", "Algorithmes", "Programmation en C"],
+    courses: ["Calculus", "Algebra", "Mechanics", "Electricity", "Electronics", "Chemistry", "Optics", "Algorithms", "C Programming"],
   },
 
 

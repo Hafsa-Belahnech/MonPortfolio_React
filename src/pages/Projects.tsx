@@ -23,9 +23,9 @@ export default function Projects() {
   return (
     <section className="flex flex-col gap-10">
       <div className="space-y-4 text-center max-w-2xl mx-auto">
-        <h2 className="text-4xl font-bold text-gradient-primary">Projets Réalisés</h2>
+        <h2 className="text-4xl font-bold text-gradient-primary">Projects</h2>
         <p className="text-white/60 text-lg">
-          Découvrez une sélection de mes travaux récents, alliant design moderne et performances exceptionnelles.
+          Discover a selection of my recent work, combining modern design and exceptional performance.
         </p>
       </div>
       
@@ -86,7 +86,7 @@ export default function Projects() {
                   rel="noreferrer"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  Démo Live
+                  Live Demo
                 </a>
               )}
               {p.repo && (

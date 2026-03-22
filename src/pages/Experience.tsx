@@ -4,26 +4,26 @@ import { Briefcase } from "lucide-react";
 // Placeholder data since we don't know the exact data structure yet.
 const experiences = [
   {
-    role: "Développement web : Full Stack",
+    role: "Web Development: Full Stack",
     company: "FST-G",
-    period: "2025 - Présent",
-    description: "Création des mini-sites web connectés à une base de données sous Laravel PHP, React.js, Node.js, et des interfaces simples avec Java POO. ",
+    period: "2025 - Present",
+    description: "Creation of mini-websites connected to a database using Laravel PHP, React.js, Node.js, and simple interfaces with OOP Java.",
     tags: ["React", "TypeScript", "Node.js", "AWS"]
   },
 
   {
-    role: "Projets et travaux pratiques",
+    role: "Projects and Practical Work",
     company: "FST-G",
     period: "2025 - 2026",
-    description: "Conception des projets en networking, en SGBD et en développement web. Pratique des commandes Linux de bases et réalisation des diagrammes en UML ",
+    description: "Design of networking, DBMS, and web development projects. Practice of basic Linux commands and creating UML diagrams.",
     tags: ["Flyers", "Publications", "Canva"]
   },
 
   {
-    role: "Organisatrice des  évènements parascolaires",
+    role: "Extracurricular Events Organizer",
     company: "Lycée Technique Al Khawarizmi ",
     period: "2021 - 2023",
-    description: "Participation à l’organisation des assemblées d’orientation estudiantine. Coaching et animation des événements. Création des affiches publicitaires, flyers, présentations avec Canva et PowerPoint. ",
+    description: "Participation in the organization of student orientation assemblies. Coaching and hosting events. Creation of advertising posters, flyers, and presentations using Canva and PowerPoint.",
     tags: ["Flyers", "Publications", "Canva"]
   }
 ];
@@ -32,9 +32,9 @@ export default function Experience() {
   return (
     <section className="flex flex-col gap-10">
       <div className="space-y-4 max-w-2xl">
-        <h2 className="text-4xl font-bold text-gradient-primary">Parcours & Expérience</h2>
+        <h2 className="text-4xl font-bold text-gradient-primary">Journey & Experience</h2>
         <p className="text-white/60 text-lg">
-          Un aperçu de mon évolution professionnelle et de mes réalisations passées.
+          An overview of my professional evolution and past achievements.
         </p>
       </div>
 

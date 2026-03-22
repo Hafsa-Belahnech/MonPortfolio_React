@@ -33,19 +33,19 @@ export default function Home() {
         <title>Portfolio </title>
         <meta
           name="description"
-          content="Portfolio : SQL, Développement web, Réseaux , Administration Linux, UML, Java"
+          content="Portfolio : SQL, Web Development, Networking, Linux Administration, UML, Java"
         />
       </Helmet>
 
       <div className="flex flex-col justify-center">
         <motion.div variants={item} className="inline-flex mb-4">
           <span className="glass-panel px-4 py-1.5 text-sm font-medium text-white rounded-full border border-primary/20 backdrop-blur-md">
-            Disponible pour de nouvelles opportunités ! ✨
+            Available for new opportunities! ✨
           </span>
         </motion.div>
 
         <motion.h1 variants={item} className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4">
-          Bonjour, je suis <br />
+          Hello, I'm <br />
           <span className="text-gradient-primary">{profile.name}</span>
         </motion.h1>
 
@@ -59,20 +59,20 @@ export default function Home() {
 
         <motion.div variants={item} className="flex flex-wrap gap-4">
           <Link to="/projects" className="glass-button px-6 py-3 font-medium flex items-center gap-2 bg-primary/20 hover:bg-primary/30 border-primary/30 text-white">
-            Voir mes projets
+            View my projects
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link to="/contact" className="glass-button px-6 py-3 font-medium flex items-center gap-2">
-            Me contacter
+            Contact me
           </Link>
         </motion.div>
 
         <motion.div
           variants={item}
           className="mt-12 flex flex-wrap gap-3 text-sm"
-          aria-label="badges de parcours"
+          aria-label="career badges"
         >
-          {['Licence SIR (2025)', 'Réseaux', 'SQL', 'Java', 'Linux', 'UML', 'React', 'Hibernate & JPA', 'Spring Boot', 'JDBC', 'Git', 'HTML/CSS'].map((badge) => (
+          {['IT Bachelor\'s Student (2025)', 'Networking', 'SQL', 'Java', 'Linux', 'UML', 'React', 'Hibernate & JPA', 'Spring Boot', 'JDBC', 'Git', 'HTML/CSS'].map((badge) => (
             <span key={badge} className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-white/70 backdrop-blur-md shadow-sm">
               {badge}
             </span>
@@ -88,10 +88,10 @@ export default function Home() {
         <div
           className="relative h-full w-full bg-white rounded-3xl border border-white/50 overflow-hidden flex items-center justify-center shadow-sm group-hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] transition-all duration-500"
           role="profile.png"
-          aria-label="illustration de profil"
+          aria-label="profile illustration"
         >
           {/* Placeholder for an actual image or avatar */}
-          <img src={profileImg} alt="Photo de profil"
+          <img src={profileImg} alt="Profile picture"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
         </div>
       </motion.div>
