@@ -59,8 +59,7 @@ export const projects: Project[] = [
     title: "Mini-Blog",
     period: "2025/2026",
     tags: ["PHP", "Laravel", "Bootstrap", "HTML/CSS"],
-    summary: "Interactive Mini-Blog.",
-  },
+    summary: "Interactive Mini-Blog, where authentified users can add, modify, delete their articles.",},
 
   {
     title: "Online Course Mini-Site",
