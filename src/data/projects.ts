@@ -22,6 +22,38 @@ export const projects: Project[] = [
   },
 
 
+  {
+    title: "Donation & Campaign Management System",
+    period: "2026",
+    tags: ["Java ", "Jakarta EE", "Thymeleaf", "Antigravity CSS", "Spring Boot"],
+    summary: "A solidarity management application developed with Spring Boot and Thymeleaf, designed to centralize the tracking of fundraising, donors, and non-profit campaigns.",
+    repo: "https://github.com/Hafsa-Belahnech/Gestion_de_Dons_Thymeleaf_Spring_Boot.git",
+  },
+
+
+  {
+   title: "Inventory & User Management System",
+   period: "2026",
+   tags: ["Java", "Jakarta EE", "Hibernate", "H2", "Tomcat"],
+   summary: "A robust n-tier Java EE application using Hibernate for data persistence and deployed on Tomcat 10.",
+   repo: "https://github.com/Hafsa-Belahnech/Servlet_Gestion_Produits_Utilisateurs.git",
+  },
+
+  {
+   title: "Spring Security Authentication Flow",
+   period: "2026",
+   tags: ["Spring Security", "Spring Boot", "Java", "Thymeleaf", "JDK 17"],
+   summary: "A customized authentication system featuring role-based access control (RBAC) and secure redirection logic.",
+   repo: "https://github.com/Hafsa-Belahnech/Formulaire_Connexion_SpringBoot_Thymeleaf.git",
+  },
+
+  {
+   title: "In-Memory Auth with Spring Security",
+   period: "2026",
+   tags: ["Spring Security", "In-Memory Auth", "Thymeleaf", "Java", "RBAC"],
+   summary: "A secure authentication model featuring in-memory user management, role-based access control, and intelligent routing.",
+   repo: "https://github.com/Hafsa-Belahnech/Authentification_Memoire_Spring_Security.git",
+  },
 
   {
     title: "Mini-Blog",
