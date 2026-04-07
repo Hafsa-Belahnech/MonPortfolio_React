@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import profileImg from '../assets/profile.jpg';
+import profileImg from '../assets/profil.png';
 
 
 const container = {
@@ -87,7 +87,7 @@ export default function Home() {
         <div className="absolute -inset-2 bg-white/40 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <div
           className="relative h-full w-full bg-white rounded-3xl border border-white/50 overflow-hidden flex items-center justify-center shadow-sm group-hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] transition-all duration-500"
-          role="profile.png"
+          role="profil.png"
           aria-label="profile illustration"
         >
           {/* Placeholder for an actual image or avatar */}
