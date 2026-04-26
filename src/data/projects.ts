@@ -56,6 +56,14 @@ export const projects: Project[] = [
   },
 
   {
+    title: "Company network",
+    period: "2025",
+    tags: ["Cisco Packet Tracer", "Routing", "Switching", "VLAN", "Protocols", "TCP/IP", "DHCP", "DNS"],
+    summary: "Enterprise network management project using Cisco Packet Tracer",
+    repo: "https://github.com/Hafsa-Belahnech/Cisco_Networking_Project.git",
+  },
+
+  {
     title: "Mini-Blog",
     period: "2025/2026",
     tags: ["PHP", "Laravel", "Bootstrap", "HTML/CSS"],
@@ -76,11 +84,4 @@ export const projects: Project[] = [
     summary: "Database management system website for the Cadi Ayyad library",
   },
 
-  {
-    title: "Company network",
-    period: "2025",
-    tags: ["Cisco Packet Tracer", "Routing", "Switching", "VLAN", "Protocols", "TCP/IP", "DHCP", "DNS"],
-    summary: "Enterprise network management project using Cisco Packet Tracer",
-    repo: "https://github.com/Hafsa-Belahnech/Cisco_Networking_Project.git",
-  },
 ];
