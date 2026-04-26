@@ -81,5 +81,6 @@ export const projects: Project[] = [
     period: "2025",
     tags: ["Cisco Packet Tracer", "Routing", "Switching", "VLAN", "Protocols", "TCP/IP", "DHCP", "DNS"],
     summary: "Enterprise network management project using Cisco Packet Tracer",
+    repo: "https://github.com/Hafsa-Belahnech/Cisco_Networking_Project.git",
   },
 ];
