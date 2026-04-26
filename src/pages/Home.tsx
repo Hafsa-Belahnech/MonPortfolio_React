@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import profileImg from '../assets/profile.png';
+import profileImg from '../assets/profile.jpg';
 
 
 const container = {
